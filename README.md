@@ -16,4 +16,12 @@ you might have Templar 2 installed when really what you need is Templar 1. (Chec
 
 ## Installation
 
-Clone and run `python3 setup.py install` from inside the repo.
+If you have Templar 2 already installed, uninstall it. Something like `pip3 uninstall templar` should do the trick. If not, try finding and manually removing the files/directories below:
+
+```
+/usr/local/bin/templar
+/usr/local/lib/python3.4/dist-packages/templar-2.0.1.egg-info
+/usr/local/lib/python3.4/dist-packages/templar/
+```
+
+Now clone this repo, `cd` into it, and run `python3 setup.py install`.
